@@ -19,7 +19,9 @@ const server = new ApolloServer({
 mongoose
   .connect(
     "mongodb+srv://fausta:kIc92MSqEAK5NUnw@cluster0.jx3rb.mongodb.net/socialApp?retryWrites=true&w=majority",
-    { useNewUrlParser: true, useUnifiedTopology: true }
+    { useNewUrlParser: true,
+      useCreateIndex: true,
+      useUnifiedTopology: true }
   )
   .then(() => {
     console.log("Connected DB");
