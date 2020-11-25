@@ -16,6 +16,7 @@ const server = new ApolloServer({
   context: ({ req }) => ({ req, pubsub }),
 });
 
+
 mongoose
   .connect(
     "mongodb+srv://fausta:kIc92MSqEAK5NUnw@cluster0.jx3rb.mongodb.net/socialApp?retryWrites=true&w=majority",
